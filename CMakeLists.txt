@@ -15,7 +15,6 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(factorial_test tests/factorial_test.cpp src/factorial.cpp)
-add_executable(main main.cpp src/factorial.cpp)
-
-target_link_libraries(factorial_test PRIVATE Catch2::Catch2WithMain)
+add_executable(lab5_test tests/lab5_test.cpp src/lab5.cpp)
+add_executable(main main.cpp src/lab5.cpp)
+target_link_libraries(lab5_test PRIVATE Catch2::Catch2WithMain)
